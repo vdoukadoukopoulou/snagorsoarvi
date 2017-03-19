@@ -1,0 +1,8 @@
+body {
+  font-family: 'Overpass', sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  color: red;
+}
