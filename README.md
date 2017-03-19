@@ -1,4 +1,2 @@
 # snagorsoarvi
-BA thesis
-
-#header
+#BA thesis #real struggle
