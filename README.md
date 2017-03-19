@@ -1,0 +1,2 @@
+# snagorsoarvi
+BA thesis
