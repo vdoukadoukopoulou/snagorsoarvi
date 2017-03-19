@@ -3,6 +3,42 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-h1 {
-  color: red;
+h1 {}
+
+article {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+}
+
+.references {
+  color: black;
+  font-size: 16px;
+  -webkit-transition: 1s;
+  -webkit-transition: .4s;
+
+}
+
+.references li, h1 {
+  opacity: .2;
+  padding-left: 50px;
+  padding-bottom: 20px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.references li:hover {
+  opacity: 1;
+}
+
+
+
+.intro {
+  font-family: Overpass-Bold;
+  font-size: 48px;
+  color: #000000;
+  letter-spacing: 3.5px;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
 }
