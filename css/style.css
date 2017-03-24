@@ -6,6 +6,21 @@ body {
 
 h1 {}
 
+header h1 {
+  position: fixed;
+  text-align: center;
+  top: 30px;
+  opacity: .1;
+  -webkit-transition: .4s;
+  transition: .4s;
+  white-space:nowrap;
+  overflow: hidden;
+}
+
+header h1:hover {
+  opacity: 1;
+}
+
 article {
     margin-top: 100px;
 }
