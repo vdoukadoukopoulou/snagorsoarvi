@@ -1,15 +1,26 @@
 body {
   font-family: 'Overpass', sans-serif;
   text-rendering: optimizeLegibility;
+    background-color: #EBEAEA;
 }
 
 h1 {}
 
 article {
-  margin-top: 100px;
+    margin-top: 100px;
+}
+
+article p {
   margin-left: auto;
   margin-right: auto;
-  padding: 0px 50px;
+  padding: 50px 50px;
+  max-width: 800px;
+}
+
+article h1 {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 50px;
   max-width: 800px;
 }
 
@@ -18,16 +29,19 @@ article {
   font-size: 16px;
   -webkit-transition: 1s;
   -webkit-transition: .4s;
-  padding-left: 500px;
-
+  padding-left: 20vw;
 }
 
-.references li, h1 {
+.references li {
   opacity: .2;
   padding-left: 50px;
   padding-bottom: 20px;
   -webkit-transition: .4s;
   transition: .4s;
+}
+
+.references h1 {
+  opacity: .2;
 }
 
 .references li:hover {
@@ -53,6 +67,45 @@ article {
   transition: 4s;
 }
 
+.epitaph-sub {
+  font-size: 16px;
+  text-align: right;
+}
+
 .epitaph-small {
   font-size: 26px;
+}
+
+.big-picture {
+  max-width: 500px;
+  padding-right: 30vw;
+}
+
+.sami {
+  text-align: right;
+  max-width: 600px;
+  padding-left: 20vw;
+}
+
+.quote {
+  font-style: italic;
+}
+
+.quote p::before {
+  content: '“';
+  display: inline;
+}
+
+.quote p::after {
+  content: '”';
+  display: inline;
+}
+
+.interlude {
+  text-align: center;
+}
+
+.time {
+  text-align: justify;
+  width: 100%;
 }

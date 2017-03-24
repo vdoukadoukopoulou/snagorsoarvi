@@ -10,7 +10,7 @@ $(document).ready(function() {
 	$("body").contents().clone().appendTo("body");
 
 	$(document).scroll(function() { // detect scrolling
-		scroll();
+		// scroll();
 	});
 
 	function scroll() {
