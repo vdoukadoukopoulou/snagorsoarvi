@@ -7,17 +7,17 @@ body {
 
 h1 {}
 
-article {
+.column article {
     margin-top: 100px;
 }
 
-article p {
+.column article p {
     margin-left: auto;
     margin-right: auto;
     max-width: 1000px;
 }
 
-article h1 {
+.column article h1 {
     margin-left: auto;
     margin-right: auto;
     padding: 50px 50px;
@@ -48,7 +48,7 @@ article h1 {
     opacity: 1;
 }
 
-.intro {
+.title {
     font-family: Overpass-Bold;
     font-size: 48px;
     color: #000000;
@@ -58,7 +58,7 @@ article h1 {
 .victoria {
     padding-top: 90px;
     padding-left: 150px;
-    width: 800px;
+    max-width: 800px;
     font-style: italic;
     color: #5f5f64;
 }
@@ -113,27 +113,22 @@ article h1 {
 }
 
 .interlude p {
-    writing-mode: tb-rl;
+    -webkit-writing-mode: tb-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: tb-rl;
     -webkit-transform: rotate(380deg);
-    -moz-transform: rotate(380deg);
-    -ms-transform: rotate(380deg);
-    -o-transform: rotate(380deg);
     transform: rotate(380deg);
 }
 
 .time {
     text-align: justify;
-    width: 900px;
+    max-width: 900px;
     margin-right: 100px;
     margin-left: 300px;
 }
 
 .side_thought {
     text-align: justify;
-    width: 900px;
+    max-width: 900px;
     margin-left: 200px;
-}
-
-%;
-
 }
