@@ -1,15 +1,36 @@
 body {
     font-family: 'Overpass', sans-serif;
     text-rendering: optimizeLegibility;
-    background-color: #EBEAEA;
-    font-size: 22px;
+    font-size: 18px;
     margin: 0;
 }
 
 h1 {}
 
+.dear_reader {
+  padding-bottom: 200px;
+}
+
+.dear_reader p {
+  width: 55%;
+}
+
+
+.column {
+  width: 50vw;
+  display: inline-block;
+  float: left;
+}
+
+.left {
+  background-color: #EBEAEA;
+}
+
 .column article {
-    margin-top: 100px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 .column article p {
@@ -55,6 +76,10 @@ h1 {}
     font-size: 48px;
     color: #000000;
     letter-spacing: 3.5px;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px;
 }
 
 .victoria {
@@ -66,9 +91,9 @@ h1 {}
 }
 
 .epitaph {
-    font-size: 20px;
+    /*font-size: 20px;*/
     line-height: 22px;
-    padding-left: 600px;
+    padding-left: 20vw;
     max-width: 500px;
 }
 
@@ -78,19 +103,18 @@ h1 {}
 }
 
 .epitaph-small {
-    font-size: 26px;
+    /*font-size: 26px;*/
 }
 
 .big-picture {
     max-width: 100%;
-    padding-left: 100px;
     text-align: justify;
 }
 
 .sami {
     text-align: justify;
     max-width: 100%;
-    padding-left: 200px;
+    padding-left: 10vw;
 }
 
 .quote {
@@ -108,7 +132,7 @@ h1 {}
 }
 
 .interlude {
-    font-size: 20px;
+    /*font-size: 20px;*/
     text-align: center;
     background-color: #f0f0f0;
 }
@@ -116,8 +140,8 @@ h1 {}
 .time {
     text-align: justify;
     max-width: 900px;
-    margin-right: 100px;
-    margin-left: 300px;
+    margin-right: 5vw;
+    margin-left: 10vw;
 }
 
 .side_thought {
