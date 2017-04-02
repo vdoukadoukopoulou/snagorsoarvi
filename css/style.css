@@ -1,139 +1,149 @@
+
+.title {
+  display: none;
+}
+
+
 body {
     font-family: 'Overpass', sans-serif;
     text-rendering: optimizeLegibility;
-    background-color: #EBEAEA;
-    font-size: 22px;
+    background-color: #FFF;
+    font-size: 16px;
+    color: #343434;
+    line-height: 28px;
+    font-family: Overpass-Light;
+    height:99999px;
 }
-
-h1 {}
 
 article {
-    margin-top: 100px;
+
 }
 
-article p {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1000px;
+#author {
+  z-index: 200;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  font-size: 14px;
+  color: #343434;
+  font-weight: 600;
+  text-decoration: none;
+  opacity: .2;
 }
 
-article h1 {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 50px 50px;
-    max-width: 800px;
+#author:hover {
+  opacity: 1;
+}
+
+.panel {
+  background-color: #FFF;
+  max-width: 600px;
+  padding: 40px 60px;
+  border: 2px solid #343434;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  position: fixed;
+  margin-right: 10px;
+}
+
+.fixed {
+  background-color: #FFF;
+  max-width: 600px;
+  padding: 40px 60px;
+  border: 2px solid #343434;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  position:fixed;
+  margin-right: 10px;
+}
+
+.intro {
+  margin-top: 30vh;
+  margin-left: 10vw;
+  z-index: 11;
+  font-style: italic;
+}
+
+.panel.interlude {
+  z-index: 10;
+  margin-top: 50vh;
+  margin-left: 40vw;
+}
+
+.time_part {
+  margin-top: 20vh;
+  margin-left: 25vw;
+  z-index: 9;
+}
+
+.quote {
+  font-style: italic;
+  padding-left: 2vw;
+}
+
+p {
+
+}
+
+.long_thoughts {
+  margin-top: 25vh;
+  margin-left: 35vw;
+  z-index: 8;
 }
 
 .references {
-    color: black;
-    font-size: 16px;
-    -webkit-transition: 1s;
-    -webkit-transition: .4s;
-    padding-left: 20vw;
+  margin-top: 35vh;
+  margin-left: 5vw;
+  z-index: 0;
+  font-size: 16px;
+  word-wrap: break-word;
+}
+
+.appendix {
+  margin-top: 10vh;
+  margin-left: 40vw;
+  z-index: 6;
+}
+
+.random {}
+
+.alphabet_book {
+  margin-top: 25vh;
+  margin-left: 25vw;
+  z-index: 5;
+}
+
+.landscape {
+  margin-top: 55vh;
+  margin-left: 45vw;
+  z-index: 4;
+}
+
+.sami_part {
+  margin-top: 30vh;
+  margin-left: 10vw;
+  z-index: 3;
 }
 
 .references li {
     opacity: .2;
     padding-left: 50px;
     padding-bottom: 20px;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-.references h1 {
-    opacity: .2;
 }
 
 .references li:hover {
     opacity: 1;
 }
 
-.intro {
-    font-family: Overpass-Bold;
-    font-size: 48px;
-    color: #000000;
-    letter-spacing: 3.5px;
+.front {
+  z-index: 400;
 }
 
-.victoria {
-    padding-top: 90px;
-    padding-left: 150px;
-    width: 800px;
-    font-style: italic;
-    color: #5f5f64;
-}
-
-.epitaph {
-    font-size: 20px;
-    line-height: 22px;
-    padding-left: 600px;
-    max-width: 500px;
-}
-
-.epitaph-sub {
-    font-size: 12px;
-    text-align: right;
-}
-
-.epitaph-small {
-    font-size: 26px;
-}
-
-.big-picture {
-    max-width: 100%;
-    padding-left: 100px;
-    text-align: justify;
-}
-
-.sami {
-    text-align: justify;
-    max-width: 100%;
-    padding-left: 200px;
-}
-
-.quote {
-    font-style: italic;
-}
-
-.quote p::before {
-    content: '“';
-    display: inline;
-}
-
-.quote p::after {
-    content: '”';
-    display: inline;
-}
-
-.interlude {
-    font-size: 20px;
-    text-align: center;
-    background-color: #f0f0f0;
-    text-transform: rotate(90deg);
-}
-
-.interlude p {
-    writing-mode: tb-rl;
-    -webkit-transform: rotate(380deg);
-    -moz-transform: rotate(380deg);
-    -ms-transform: rotate(380deg);
-    -o-transform: rotate(380deg);
-    transform: rotate(380deg);
-}
-
-.time {
-    text-align: justify;
-    width: 900px;
-    margin-right: 100px;
-    margin-left: 300px;
-}
-
-.side_thought {
-    text-align: justify;
-    width: 900px;
-    margin-left: 200px;
-}
-
-%;
-
+.footnote {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 70%;
+  top: -0.6em;
 }
