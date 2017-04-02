@@ -1,4 +1,5 @@
 $(window).on('beforeunload', function() {
+	//always scroll to top
 	$(window).scrollTop(0);
 });
 
