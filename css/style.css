@@ -129,6 +129,16 @@ article {
   padding-bottom: 26px;
 }
 
+.quote p::before {
+    content: '“';
+    display: inline;
+}
+
+.quote p::after {
+    content: '”';
+    display: inline;
+}
+
 .side_thought {
   padding: 40px 60px;
   background-color: #343434;
