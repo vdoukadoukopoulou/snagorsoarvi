@@ -4,6 +4,21 @@ $(window).on('beforeunload', function() {
 });
 
 $(document).ready(function() {
+	$('html, body').bind('DOMMouseScroll mousewheel MozMousePixelScroll', function(e) {
+		var scrollTo = 0;
+
+		if (e.type == 'mousewheel') {
+			scrollTo = (e.originalEvent.wheelDelta * 1);
+		} else if (e.type == 'DOMMouseScroll') {
+			// scrollTo = 20 * e.originalEvent.detail; // turns out, this sometimes works better as expected...
+			scrollTo < e.originalEvent.detail;
+		}
+
+		if (scrollTo > 0) {
+			e.preventDefault();
+			return false;
+		}
+	});
 
 	var numOfPanels = $('.panel').length;
 	var currentPanel = 0;
