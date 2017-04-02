@@ -4,11 +4,12 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Kanye and Non-Humans</title>
+    <title>So let’s say, you walk down a path and you run into a snag, a dead tree, an unexpected drawback — a soarvi</title>
     <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
     <script src="script/jquery.js"></script>
     <script src="script/script.js" charset="utf-8"></script>
     <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
+
   </head>
 
   <body>
@@ -17,7 +18,7 @@
       <p>So let’s say, you walk down a path and you run into a snag, a dead tree, an unexpected drawback — a soarvi</p>
     </article>
     <article class="panel intro">
-      <p>Dear Reader, <br><br> Here are my concerns:<br><br> That if I ask you to forget, the first thing you will do is remember. The first thing will call up the second, the third and the fourth and a timeline will be established.<br><br> Linearities sneak up on you; they organise, order and arrange without you noticing ; allowing things to be easy to follow, making you expect simplicity. They frustrate me and I will try to avoid them.<br><br> I am looking for ways to express my thoughts like a walk, I am looking for ways to tell a story about time, where the I stands for the personal pronoun used by a speaker to refer to himself or herself but it is not limited to the 9th letter of the latin alphabet, the subject or the object of self-consciousness ; the ego, a line, the electric current or iodine. From perspectives that don’t assume humanity and avoid anthropomorphising. <br><br> Think of baroque polyphonic choirs, think of entanglements.<br><br> My voice being one of them, not the principal. As the author of this text, this is the only time I will exercise my authority over you, to offer you the following reminder. Partially because I am concerned with how much of a good job I have done and partially because I don’t know how accountable you will hold me. I would advise for very, and urge you to look closely through each line, for when I fail to do as I preach. <br><br> Now saying this, here is where we stand. You should forget and proceed to read with no assumptions and prior knowledge of how things are ought to be or you should keep on remembering that you know and you assume.<br><br> Welcoming remarks,<br> Victoria
+      <p>Dear Reader, <br><br> Here are my <span class="footnote">12</span> concerns:<br><br> That if I ask you to forget, the first thing you will do is remember. The first thing will call up the second, the third and the fourth and a timeline will be established.<br><br> Linearities sneak up on you; they organise, order and arrange without you noticing ; allowing things to be easy to follow, making you expect simplicity. They frustrate me and I will try to avoid them.<br><br> I am looking for ways to express my thoughts like a walk, I am looking for ways to tell a story about time, where the I stands for the personal pronoun used by a speaker to refer to himself or herself but it is not limited to the 9th letter of the latin alphabet, the subject or the object of self-consciousness ; the ego, a line, the electric current or iodine. From perspectives that don’t assume humanity and avoid anthropomorphising. <br><br> Think of baroque polyphonic choirs, think of entanglements.<br><br> My voice being one of them, not the principal. As the author of this text, this is the only time I will exercise my authority over you, to offer you the following reminder. Partially because I am concerned with how much of a good job I have done and partially because I don’t know how accountable you will hold me. I would advise for very, and urge you to look closely through each line, for when I fail to do as I preach. <br><br> Now saying this, here is where we stand. You should forget and proceed to read with no assumptions and prior knowledge of how things are ought to be or you should keep on remembering that you know and you assume.<br><br> Welcoming remarks,<br> Victoria
       </p>
     </article>
     <article class="panel interlude">
@@ -39,21 +40,23 @@
       <article class="side_thought">
         <h1>side thought</h1>
         <p>June 30th 2012 was the third ‘leap second’ incident after almost a decade of not having any. As the Earth’s rotation around itself actually takes 24 hours and 2 seconds instead of just 24, every now and then the International Telecommunications Union (UTI) has to add a second to even things out (Stromberg & Plumer 2016).<br><br> This is necessary due to the existence of two times : Greenwich Mean Time, which alines noon with the time when the sun is at it’s highest position in Greenwich, London and was the time all official clocks followed until the of fall 1967 when most countries switched over to Coordinated Universal Time (UTC), which is calculated as 1 second of mean solar time at 0° longitude (Stromberg & Plumer 2016). <br><br> Due to the fact that the later clock takes into account the Earth’s rotation there is a difference created between the two clocks, less than a second in a year, up to 30 seconds since the implementation of UTC turns into minutes and hours as the year and millennia go by (Stromberg & Plumer 2016).<br><br> It was that leap second 23:59:60 that caused Reddit to be in different states of off for about 2 hours. Reddit, the popular social news aggregation, web content rating, and discussion website runs on the operating system Linux. Originally the glitch that was driving the servers into hyperactivity was attributed to something else, but after a while the true cause was found. In one of the most basic levels of the operating system, a linux kernel, the hrtimer couldn’t understand what the extra second was (McMillan 2012).</p>
-      </article>
-      <article class="quote">
-        <p>hrtimer is a subsystem that used when an application is “sleeping,” waiting for the OS to complete some other task. In some cases, it sets a kind of alarm clock for these sleeping applications that will go off when the OS is taking too much time with its other work.”</p>
-      </article>
-      <article class="side_thought">
+
+        <article class="quote">
+          <p>hrtimer is a subsystem that used when an application is “sleeping,” waiting for the OS to complete some other task. In some cases, it sets a kind of alarm clock for these sleeping applications that will go off when the OS is taking too much time with its other work.”</p>
+        </article>
+
         <p>What seems to have happened is that when the leap second arrived the hrtimer became a second ahead of the OS, and started awaking several of those sleeping applications and running the system into hyperactivity. The solution came by eventually restarting the servers (McMillan 2012).
           <br><br> The problem with leap seconds is that programmers built the core kernels which have to deal with them in the 1970s when leap seconds weren’t a thing yet. They were built with the expectation that time always move forward, time cannot go backwards and time cannot repeat itself. All principles that the leap seconds renounces(McMillan 2012).
           <br><br> Mozzilla, The Gawker, Stumble Upon, Yelp, Foursquare and Linkedln, all also carried confused hrtimer kernels that caused similar problems (Webster 2012). Google hoping to avoid major problems has created an antidote called the “leap smear”. It operates by modifying Google’s NTP servers, the Network Time Protocol which </p>
-      </article>
-      <article class="quote">
-        <p>periodically checks the computers’ time against a more accurate server, which may be connected to an external source of time, such as an atomic clock</p>
-      </article>
-      <article class="side_thought">
+        <article class="quote">
+          <p>periodically checks the computers’ time against a more accurate server, which may be connected to an external source of time, such as an atomic clock</p>
+        </article>
         <p>and adds occasionally a couple milliseconds making so that when the leap second finally arrives Google’s clock will have already accounted for it (Pascoe 2011). It is a 20 hour linear smear, 72,000 SI seconds that eventually add up to the required leap (Google Public NTP 2017).
-          <br><br> In a sense the leap smear slows down the hrtimer to meet with with the Earth’s rotation. Making Google’s servers, clocks and computers for 20 hours at a time completely in tune with the landscape they exist upon more than the humans who programmed them.<br><br> If it wasn’t for software we would have very little or any at all interaction with leap seconds, or by extend the rotation of the Earth for that matter. Our electronic devises and clock update automatically and if they don’t, running a second ahead wouldn’t be able noticeable by anyone. This is mostly due to the fact that humans inhabit social time instead of astrological time (Sorokin & Merton 1937).</p>
+          <br><br> In a sense the leap smear slows down the hrtimer to meet with with the Earth’s rotation. Making Google’s servers, clocks and computers for 20 hours at a time completely in tune with the landscape they exist upon more than the humans who programmed them. </p>
+      </article>
+      <article class="time">
+
+        <p>If it wasn’t for software we would have very little or any at all interaction with leap seconds, or by extend the rotation of the Earth for that matter. Our electronic devises and clock update automatically and if they don’t, running a second ahead wouldn’t be able noticeable by anyone. This is mostly due to the fact that humans inhabit social time instead of astrological time (Sorokin & Merton 1937).</p>
       </article>
       <article class="quote">
         <p>social time express the change or movement of social phenomena in terms of other social phenomena taken as points of reference</p>
@@ -132,30 +135,25 @@
       <p>diagrams and lists</p>
     </article>
 
-    <article class="panel alphabet_book random">
-      <article class="epitaph">
-        <p>“ The fact is if we followed the history of every little country in this world — in its dramatic as well as its quiet moments — we would have no space in which to live our own lives or to apply ourselves to our necessary tasks, never mind indulge in occasional pleasures, like swimming. Surely there is something to be said for drawing a circle around our attention and remaining within that circle. But how large can that circle be ? ”</p>
-        <p class="epitaph-sub">Zadie Smith, The Embassy of Cambodia </p>
-        <p>“ You who read me — are you certain you understand my language ? ”</p>
-        <p class="epitaph-sub">Jorge Luis Borges, The Library of Babel</p>
-        <p>“ Accepted into the exchange program of University of Lapland in Rovaniemi, Finland! This old lady kid will have the aurora borealis in her back yard for the whole fall semester of 2015! ”</p>
-        <p class="epitaph-sub">Victoria Douka-Doukopoulou, facebook status, June 8th 2015 ・81 likes</p>
-      </article>
+    <article class="panel alphabet_book">
+      <p>alphabet_book</p>
     </article>
-
-    <article class="panel landscape random">
+    <article class="panel landscape1">
       <article class="big-picture">
         <h1>the bigger picture</h1>
         <p>Situated south of the Arctic, the boreal forest region forms a continuous belt across the North America and Eurasia, amounting to 11% of Earth’s terrestrial surface and one of its largest biomes. Generally the arctic, subarctic and or mid-latitude regions with a cold climate are referred to as the boreal forest and are found in Russia, Canada, United States, Finland, Sweden, Norway and Iceland (Burton et al. 2010). The circumboreal forest accounts for about one quarter of the world’s forested area, with a size of almost 1 billion hectares (Burton et al. 2003 as cited in Bergeron & Fenton 2012).<br><br> The establishment of the boreal forest region dates back to the mid-Pliocene when the decline of the Cenozoic temperature allowed the warmth-demanding trees of the Tertiary era to be replaced by the genera that is typically present nowadays in the boreal forest region (Crawford 2008).<br><br> Forests then largely disappeared from the high latitudes throughout the Pleistocene, placing all the forested area of the time much souther, however research on pollen records has shown that probably minor shrubs and herbs permitted the survival of pockets of tree in higher latitudes during the Last Glacial Maximum (Crawford 2008).<br><br> The succeeding Holocene enabled trees to resettle the north but never as far as Pliocene. However, during the early Pliocene, the tree migration was vast and rapid across both Europe and Canada allowing the boreal forest to advance far into the tundra biome. Now given that the cold weather has prevailed for the past 6000 years the boreal forest hadn’t had the opportunity since to forge ahead, until very recently as a side effect of the rise of temperature due to global warming. However that doesn’t mean the boreal forest had remained static all over those years. (Crawford 2008)<br><br> The boreal forest and the arctic tundra, are both major biomes which in total cover 30 million square kilometres in the northern hemisphere; fundamentally different in flora, fauna and ecosystem productivity levels, have kept mostly apart, due to different thermal characteristics needs (Shugart et al. 1992), however as the climate warms the possibilities for the boreal of rest to advance into ‘the zone between the northern limit of the boreal forest (taiga) and the southern extent of the arctic tundra [..] (that) stretches for 13 400 kilometres around the northern hemisphere and across three continents’ (Crawford 2008) rises.
         </p>
       </article>
+    </article>
+    <article class="panel landscape2">
       <article class="big-picture">
         <h1>the picture</h1>
         <p>First the icebergs retreated, gigantic masses of frozen water pulled up towards the north leaving behind bare mineral land.<br><br> Then the trees started spreading, quietly and peacefully, seed by seed, wind-blow by wind-blow, the seeds landed in over thousands of acres and 3 continents.<br><br> There was no overnight occupation, no grand skim of enslaving a land, just some wind, and some luck for a seed to land in land and not on a melting iceberg. There was also a mushroom, turning rock into nutrition, that without the seed wouldn’t have blossomed, that was pretty crucial.<br><br> And then came soil, mostly frozen for 10 months of the year, but the remaining two of 24 hours of sun were enough for the seed to turn into an infant, and for the infant to turn into infants. And so in the far north and circumpolar regions a forest grew out of pine seeds that carried mushrooms.<br><br> And as the forest are and blossomed, the pines worked the soil rich, and the forest bedding thick with smaller plants and bushes, now spruce also grew. And then fauna came, and started clearing the bedding floor, but once fauna was around it was figured that careful selection of small plants brings in the type of fauna you want. <br><br> You did so, first by small fires, but that made sense, it had happened before, occasionally, and it helped the forest grow. Then there were more fires, here and there and parts of the forest were transformed.<br><br> Deciduous now they were, shedding their leaves all winter, pilling them up on the forest floor. During the rainy summer no burning was possible, but during the dry summers the hills were covered in smoke.<br><br> And so the pine decreased, and the burned spruce made room for birch, clear fields allowed for grazing and in glades now grey alder and juniper grew.<br><br> But the wind blew and those areas were surrounded by a birch forests and those forests by pines and those pines by spruces that were now climbing all the way up where the icebergs still stood.<br><br> By the time the fauna had grown custom to being around, and the forest bed was cleared. Fences were needed to round-up the reindeer twice a year.<br><br> And by the time the fences were made, the tree trunks were called wood, but just for seldom use. <br><br> But before the wind blew again, it was called timber.<br><br> Now that the pine was timber, the wind didn’t blew often enough, and the forest was to be grown for other purposes such as efficiency and extensiveness besides just chance and luck (Björn 2000).<br><br> The forest was now called underproductive and the swamps a waste, because timber didn’t grow there fast enough.<br><br> But there was space, and the felling tall pine was good, and making more of it just made sense, simplification and uniformity were things that the forest didn’t have enough, and was to be given (Björn 2000).<br><br> And “forest was divorced from nature, nature from its cycle, from the annual and daily rotation” (Björn 2000)<br><br> Soon, spruce was good enough and smaller trees and shorter trunks, mainly because there weren’t enough virgin forest, since the furthest and furthest and more remote untouched ones were now for a while begging called logging sites. There, where the pine had grown thick, and the wind still blew at its own pace, now were roads and squares and lamp posts.<br><br> And by 1970, all sites were good enough and the forests and the swamps and the mires, all the trunks were salvageable (Björn 2000).<br><br> And “forests belong to biology and ecology” (Björn 2000) and were to be regulated, because we were starting to run out them. So we categorised and named them, to keep track of them.<br><br> And so natural preserves were declared, and parks, and industrial forests and experimental forests and pseudo-traditional landscapes of virgin forest. And now the forest is again plenty and we can all have some, and tell our friends that ‘the forest cover in Finland is more extensive than in any other European country. Three fourths of the land area, some 23 million hectares, is under forests’ (Björn 2000).<br><br> And this is how things look like now. And this is how forests are now.</p>
       </article>
     </article>
 
-    <article class="panel sami_part random">
+
+    <article class="panel sami_part">
       <article class="sami">
         <h1>the background</h1>
         <p>Somewhere south of the Reisa National Park, near the the border with Finland and the Norwegian county Troms is the source of the Alta River. Know as Alta River; Álttáeatnu; Alattionjoki, Alattionjoki, Guovdageaineatnu or Eatnu along its 250 km run to Alta, to flow into the Altafjorden and by extend the Barents Sea. The river starts in the Kautokeino mountains and runs by the villages Kautokeino and Masi, from the high Finnmarks plateau to the Sautso Canyon, that begins just downstream from the Alta Power Station. <br><br> The Alta Power Station is perhaps one of the most controversial hydropower developments in Norway’s history, as it is even stated in the company’s website. When it construction was proposed in 1970 by the Norwegian Water Resources and Energy Directorate, it was just “the latest affront in a long history of Norway’s marginalisation of its indigenous peoples” (see Sámi State Conflicts)(Lawrence 2011)</p>
@@ -167,7 +165,7 @@
         <p>As a journalist covering the protests against the dam, Niillas Somby understood that those were the things this grandfather used to talk about, when he said : “you have to have respect for the river, for the land” (Somby 2014).<br><br> In his talk at the Documenta 14 panel 34 Exercises of Freedom : # 3 , Niillas Somby traces his life growing up as a Sámi and how the long discussions with his grandfather, taught him what is important to the traditional Sàmi life. He explains : “the main thing in being part in the traditional reindeer herding family is to have respect, very very very deep respect to the land, to the stones, to everything living and non-living thing in the nature”(Somby 2014)
           <br><br> Although the Sámi activists succeeded in scaling down the project, and saving Masi by 1976, the battle against the Norwegian Government and the construction of the dam continued till the autumn of 1982 and ended when the Norwegian Super Court decided that Sámi had no legal claim to their pastoral land (see Alta Controversy Timeline). That was 6 years of active mobilisation after their homes had been saved from induction. Why would a nation subject themselves to that ? To answer that one has to understand what ‘home’ is for the Sámi. </p>
       </article>
-      <article class="interlude">
+      <article class="side_thought interlude">
         <h1>interlude</h1>
         <p>My home is in my heart<br> it migrates with me<br> The yoik is alive in my home<br> the happiness of children sounds there<br> herd-bells ring<br> dogs bark<br> the lasso hums<br> In my home<br> the fluttering edges of gaktis<br> the leggings of the Sami girls<br> warm smiles<br>
           <br> My home is in my heart<br> it migrates with me<br>
@@ -223,10 +221,20 @@
         <p>and like all stories, it takes time.</p>
       </article>
     </article>
-
+    <article class="panel epitaph">
+      <p>“ The fact is if we followed the history of every little country in this world — in its dramatic as well as its quiet moments — we would have no space in which to live our own lives or to apply ourselves to our necessary tasks, never mind indulge in occasional pleasures, like swimming. Surely there is something to be said for drawing a circle around our attention and remaining within that circle. But how large can that circle be ? ”</p>
+      <p class="epitaph-sub">Zadie Smith, The Embassy of Cambodia </p>
+      <p>“ You who read me — are you certain you understand my language ? ”</p>
+      <p class="epitaph-sub">Jorge Luis Borges, The Library of Babel</p>
+      <p>“ Accepted into the exchange program of University of Lapland in Rovaniemi, Finland! This old lady kid will have the aurora borealis in her back yard for the whole fall semester of 2015! ”</p>
+      <p class="epitaph-sub">Victoria Douka-Doukopoulou, facebook status, June 8th 2015 ・81 likes</p>
+    </article>
+    <article class="panel village">
+      <p>I would like to thank Kasper van der Horst, Cocky Eek, Merel Boers, Maya Rasker and Michiel Pijpe for their kind support and thoughtful feedback over the two years and several forms and formats that eventually came to be this thesis. <br>Anthi Galani, Lambros Doukas and Alexis Doukas, my extremely considering parents and supportive brother, who without their support, encouragement and understanding I would literally not have been able to write or study for that matter. <br>Eline Benjaminssen, George Knegtel and Mihály Stefanovicz for giving me a room of my own, and putting up with me and my silence requirements. <br>Hélène Salamanca-Gagnon and her incredible talent for providing the illustrations. <br>And finally to Stef Kors, for all the support, endless hours work and discussion that he so kindly provided me with, this thesis wouldn’t look anything like this without his caring efforts.</p>
+    </article>
     <article class="fixed references">
       <img class="close" src="close.svg" alt="">
-      <h1>references</h1>
+      <h1>references chapter 1</h1>
       <ol>
         <li>Webster, A. (2012). Leap second bug: Reddit, Mozilla, and more experience technical issues.</li>
         <li>Valkeapää, N.-A. (1997). The sun, my father. Vaasa, Finland; Seattle, WA: DAT O.S. ; University of Washington Press (distributor).</li>
@@ -237,6 +245,9 @@
         <li>Somby, N. (2014). 34 Exercises of Freedom: #3. Retrieved from http://www.documenta14.de/en/calendar/958/3</li>
         <li>Shugart, H. H., Leemans, R., & Bonan, G. B. (2005). A Systems Analysis of the Global Boreal Forest. Cambridge University Press.</li>
         <li>Scott, J. C. (2008). Seeing like a state : how certain schemes to improve the human condition have failed. New Haven, Conn. [u.a.: Yale Univ. Press.</li>
+      </ol>
+      <h1>references chapter 2</h1>
+      <ol>
         <li>Preston, A. Let the River Live: The Fight Against the Alta Dam on the Alta-Kautokeino River, Norway. Aguas, Rios y Pueblos. Retrieved from http://www.unizar.es/aguariospueblos/pdf/caso/22._The_Fight_against_the_Alta_Dam_Norway.pdf</li>
         <li>Pascoe, C. (2011). Time, technology and leaping seconds. Retrieved from https://googleblog.blogspot.nl/2011/09/time-technology-and-leaping-seconds.html</li>
         <li>Paine, R., & IWGIA. (1982). Dam a river, damn a people? : Saami (Lapp) livelihood and the Alta/Kautokeino hydro-electric project and the Norwegian Parliament. Copenhagen: [IWGIA].</li>
