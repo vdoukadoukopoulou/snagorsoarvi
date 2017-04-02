@@ -1,42 +1,63 @@
+$(window).on('beforeunload', function() {
+	$(window).scrollTop(0);
+});
+
 $(document).ready(function() {
-	console.log('hi');
-	window.location.hash = '#open';
-	var visible;
 
-	// We need to duplicate the whole body of the website so if you scroll down you can see both the bottom and the top at the same time. Before we do this we need to know the original height of the website.
-	var origDocHeight = document.body.offsetHeight;
+	var numOfPanels = $('.panel').length;
+	var currentPanel = 0;
 
-	// now we know the height we can duplicate the body
-	$("body").contents().clone().appendTo("body");
+	//set first panel to absolute
+	$('.panel').eq(currentPanel).css({position: 'absolute'});
 
-	$(document).scroll(function() { // detect scrolling
-		// scroll();
+	// on scroll check if the current active panel is visible if not make next panel active
+	$(window).bind('mousewheel', function(event) {
+		if (event.originalEvent.wheelDelta >= 0) {
+			console.log('Scroll up');
+		} else {
+			console.log('Scroll down');
+			if (checkVisible($('.panel').eq(currentPanel)) != true) {
+				$('.panel').eq(currentPanel).next().css({position: 'absolute', top: $(window).scrollTop()});
+				currentPanel++;
+			}
+		}
 	});
 
-	function scroll() {
-		var scrollWindowPos = $(document).scrollTop(); // store how far we have scrolled
-
-		if (scrollWindowPos >= origDocHeight) { // if we scrolled further then the original doc height
-			$(document).scrollTop(0); // then scroll to the top
-		}
-	};
-
-	function visible() {
-		if ($('.epitaph').isVisible()) {
-			$('.epitaph').addClass("epitaph-small");
-			console.log('red');
-		} else {
-			$('.epitaph').removeClass("epitaph-small");
+	//check visible function from internets
+	function checkVisible(elm, eval) {
+		eval = eval || "visible";
+		var vpH = $(window).height(), // Viewport Height
+			st = $(window).scrollTop(), // Scroll Top
+			y = $(elm).offset().top,
+			elementHeight = $(elm).height();
+		if (eval == "visible")
+			return ((y < (vpH + st)) && (y > (st - elementHeight)));
+		if (eval == "above")
+			return ((y < (vpH + st)));
 		};
-	};
 
-	$.fn.isVisible = function() {
-		// Am I visible?
-		// Height and Width are not explicitly necessary in visibility detection, the bottom, right, top and left are the
-		// essential checks. If an image is 0x0, it is technically not visible, so it should not be marked as such.
-		// That is why either width or height have to be > 0.
-		var rect = this[0].getBoundingClientRect();
-		return ((rect.height > 0 || rect.width > 0) && rect.bottom >= 0 && rect.right >= 0 && rect.top <= (window.innerHeight || document.documentElement.clientHeight) && rect.left <= (window.innerWidth || document.documentElement.clientWidth));
-	};
+	//click to make panel to foreground
 
+	$('.footnote').click(function() {
+		$('.references').addClass('front');
+	});
+
+	$('.close').click(function() {
+		$('.references').removeClass('front');
+	});
+});
+
+$(window).load(function() {
+	var panelHeight = 0;
+
+	//set height of page same as height of all panels combined
+	$('.panel').each(function() {
+		panelHeight = panelHeight + $(this).height();
+	});
+	console.log(panelHeight);
+	if (panelHeight > 25878) {
+		$('body').height(panelHeight);
+	} else {
+		$('body').height(25878);
+	}
 });
